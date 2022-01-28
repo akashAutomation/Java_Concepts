@@ -2,11 +2,13 @@ package OOPsConcepts;
 
 public class MethodsInJava {
 
-	// 1. main() --> starting point of execution
-	// 2. main() is void because we never write return statement inside the main
-	// 3. If you try to write return statement in main() then it will give you error at runtime
-	// 	  Error: Main method must return a value of type void in class OOPsConcepts.MethodsInJava, please 
-	//	  define the main method as: public static void main(String[] args)		  
+	/*
+	 * 1. main() --> starting point of execution 
+	 * 2. main() is void because we never write return statement inside the main 
+	 * 3. If you try to write return statement in main() then it will give you error at runtime 
+	 * 	  Error: Main method must return a value of type void in class OOPsConcepts.MethodsInJava, 
+	 *           please define the main method as: public static void main(String[] args)
+	 */	
 	
 	public static void main(String[] args) {		
 		// 1. We have to create object to call non static methods in main()

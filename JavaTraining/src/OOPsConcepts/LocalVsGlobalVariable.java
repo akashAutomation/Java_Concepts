@@ -2,8 +2,12 @@ package OOPsConcepts;
 
 public class LocalVsGlobalVariable {
 	
-	// Global variables or Class variables
-		String name = "Akash";
+	/*
+	 * Global variables or Class variables --> The scope of Global var will be available across all the methods with some condition:
+	 *   1. If it is static then call direct or by classname
+	 *   2. if it is non static then call by creating an obj 
+	 */		
+	    String name = "Akash";
 		int age = 24;
 		static int contact = 1234;
 		
@@ -18,9 +22,11 @@ public class LocalVsGlobalVariable {
 	// 2. We can directly use static global var. in main()
 		System.out.println(contact);
 		
-	// 3. We cannot access class var. of non static methods in main()
-	// 4. If we are using global var. in other methods then only we can access that variable
-	//	ex.- we can access age of test() because it is a global var, we can not access i,j
+		/*
+		 * 3. We cannot access class var. of any non static methods in main() 
+		 * 4. If we are using global var. in other methods then only we can access that variable
+		 * 	  ex.- we can access age of test() because it is a global var, we can not access i,j
+		 */	
 		
 		obj.test();
 		System.out.println(obj.age); //output - 10

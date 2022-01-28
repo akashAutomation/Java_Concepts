@@ -10,11 +10,17 @@ public class Car {
 
 	public static void main(String[] args) {
 		
-		// new Car(); --> this is the object of Car class
-		// new keyword is used to create the object
-		// a,b,c --> Object Reference Variable
-		// Whenever you create an object as static or local, it gets stored in Heap
-		// Object Reference Variable is created in Stack and holds the address of object which is present in the Heap
+		/*
+		 * 1. new Car(); --> this is the object of Car class 
+		 * 2. new keyword is used to create the object 
+		 * 3. here a,b,c --> Object Reference Variable 
+		 * 4. All objects are created in Heap
+		 * 5. Object Reference Variable is stored in Stack and holds the address of object which is present in the Heap
+		 * 6. All non Static global var. is a part of objects so it gets stored in heap
+		 * 7. All Static methods and var. gets stored in Metaspace
+		 * 8. All non Static methods and var. gets stored in Stack except non static global var.
+		 * 9. All local var. gets stored in Stack 
+		 */
 		
 		Car a = new Car();
 		Car b = new Car();
