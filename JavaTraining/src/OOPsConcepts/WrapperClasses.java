@@ -1,7 +1,11 @@
 package OOPsConcepts;
 
 public class WrapperClasses {
-
+	/*
+	 * 1. Wrapper Classes --> It provide a way to use primitive data types as objects.
+	 * 2. 8 wrapper classed --> Boolean, Byte, Character, Short, Integer, Long, Float, Double
+	 *  
+	 */
 	public static void main(String[] args) {
 		
 		
