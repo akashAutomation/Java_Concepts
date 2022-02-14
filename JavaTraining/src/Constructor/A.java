@@ -3,7 +3,7 @@ package Constructor;
 public class A {
 
 	public A() {
-		System.out.println("Parent class A cons");
+		System.out.println("Parent class A defualt cons");
 	}
 
 	public A(int i) {

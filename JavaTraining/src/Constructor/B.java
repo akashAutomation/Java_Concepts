@@ -26,7 +26,7 @@ public class B extends A{
 	public B() {
 		super();  // default constructor of parent class will be called
 		//super(10, "abc");  --> this can not be done
-		System.out.println("child class B cons" );
+		System.out.println("child class B default cons" );
 	}
 	
 	public B(int i) {
@@ -43,5 +43,6 @@ public class B extends A{
 		B obj = new B();
 		B obj1 = new B(20);
 		B obj2 = new B(30, "abcd");
+		//A obj3 = new B(20);
 	}
 }
