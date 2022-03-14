@@ -4,7 +4,7 @@ package Constructor;
 
 public class Constructor {
 	/*
-	 * Constructor --> It is class entity which is used to define some class features while creating the object
+	 * Constructor --> It is class entity which is used to define some class features while creating the object. It is a member function of a class.
 	 * 1. Constructor will never return any value --> we can not write return statement inside constructor, if we write return then
 	 *    it will become method 
 	 * 2. Constructor name always same as class name
@@ -17,7 +17,7 @@ public class Constructor {
 	 * 7. If you don't want to use this keyword to initialize class variables then provide different name of local variable in constructor
 	 *    ex-> name = n1 
 	 * 8. Constructor can not be static
-	 * 9. It can be only defualt, public, protected & private
+	 * 9. It can be only default, public, protected & private
 	 * 10. If you don't define any constructor in class, then there is always one hidden constructor of class that is called default constructor
 	 */	
 	String name;

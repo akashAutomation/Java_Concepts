@@ -2,7 +2,7 @@ package OOPsConcepts;
 
 public class StaticAndNonStaticConcept {
 	
-	String name = "Akash";   // non static global var.
+	String name = "Akash";   // non static global var. or instance variable --> while creating a object then instance var is a part of that object. 
 	static int age = 24;	 // static global var.
 
 	public static void main(String[] args) {
@@ -22,6 +22,8 @@ public class StaticAndNonStaticConcept {
 		 * 		"java.lang.StackOverflowError". Here is Recursion concept applied.
 		 * 
 		 * 7. Recursion--> When a function is calling itself is called recursion.
+		 * 8. We can have inner class as static.
+		 * 9. Static functions can only access static members of the smae class. We can not write instace var. inside static functions.
 		 */	
 		
 		test2();
@@ -33,14 +35,12 @@ public class StaticAndNonStaticConcept {
 		StaticAndNonStaticConcept obj = new StaticAndNonStaticConcept();
 		System.out.println(obj.name);
 		obj.test1();
-		
+		System.out.println(StaticAndNonStaticConcept.Abc.country);
 		//main(args);   // calling main()  --> Recursion
 		
-		
-
 	}
 
-	// non static method
+	// non static method or instance member function
 	public void test1() {
 		System.out.println("test1");
 	}
@@ -49,4 +49,13 @@ public class StaticAndNonStaticConcept {
 	public static void test2() {
 		System.out.println("test2");
 	}
+	
+	// static inner class
+	static class Abc{  
+		static String country = "INDIA";
+	}
+}
+
+class Test{
+	
 }

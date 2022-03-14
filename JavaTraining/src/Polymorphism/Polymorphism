@@ -1,0 +1,8 @@
+Poly - many 
+morphs - forms
+
+--> One name but multiple forms is called polymorphism.
+
+--> two types
+	1. Static or compile time polymorphism or Early binding --> ex.- Overloading, method hiding
+	2. Dynamic or Run time polymorphism or late binding  --> ex.- Overriding 

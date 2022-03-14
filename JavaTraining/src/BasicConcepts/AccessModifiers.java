@@ -17,6 +17,7 @@ public class AccessModifiers {
 	 * 	    a. private members -> can not accessed from outside the class body. Only can access from the same class 
 	 * 		   					  in which they are declared.
 	 * 		b. protected members -> can be accessed from any class of the same package and child class from other package.
+	 * 								By using child class reference only, we can access protected members in child class of different package
 	 * 		c. public members -> they are accessible from any class of any package.
 	 * 		d. default members -> they are accessible only from the class of same package.
 	 */

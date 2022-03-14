@@ -1,0 +1,23 @@
+ 1. The underlined data structure is Resizable Array or Growable Array.
+ 2. Duplicates are allowed
+ 3. Insertion Order is preserved.
+ 4. Heterogenous objects are allowed(except TreeSet & TreeMap everywhere heterogenous objects are allowed) 
+ 5. Null insertion is possible.
+ 
+ 6. ArrayList Constructors -->
+  
+    1. ArrayList al = new ArrayList();
+       Creates an empty ArrayList object with default initial capacity 10. Once array list reaches its max capacity a new arraylist
+       will be created with new capacity:
+       				new capacity = (current capacity * 3/2)+1
+       				
+    2. ArrayList al = new ArrayList(int initialCapacity);
+    	Creates an empty array list object with initialCapacity.
+    	ex-> if we want to store large data so we can provide initialCapacity so it will improve the performance. If we will not provide
+    	     initialCapacity then it will start with 10, 16, 25...and will reduce the performance. 
+    	
+    3. ArrayList al = new ArrayList(Collection c);   				
+       	It is used for interconversion of any Collection: linkedList to arraylist, vector to arraylist, TreeSet to arraylist  etc.		
+       				
+ 7. ArrayList is best choice if our frequent operation is retrieval operation(Because ArrayList implements RandomAccess Interface).
+ 8. ArrayList is the worst choice if our frequent operation is insertion or deletion in middle(Because several shift operation are require).     				
