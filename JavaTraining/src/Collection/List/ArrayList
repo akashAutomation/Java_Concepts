@@ -20,4 +20,22 @@
        	It is used for interconversion of any Collection: linkedList to arraylist, vector to arraylist, TreeSet to arraylist  etc.		
        				
  7. ArrayList is best choice if our frequent operation is retrieval operation(Because ArrayList implements RandomAccess Interface).
- 8. ArrayList is the worst choice if our frequent operation is insertion or deletion in middle(Because several shift operation are require).     				
+ 8. ArrayList is the worst choice if our frequent operation is insertion or deletion in middle(Because several shift operation are require).
+ 
+ 9. ArrayList is not threadSafe.
+    thread safety --> When multiple threads are working on the same data and the value of our data is changing, that scenario is not thread-safe
+                      and we will get inconsistent result.
+                      
+                      When a thread is already working on an object and preventing another thread on working on the same object, this 
+                      process is called Thread safety.
+ 
+ 10. By default ArrayList is non-synchronized but we can get synchronized version of ArrayList by using COllection class synchronizedList() method.
+       method signature --> public static List synchronizedList(List i) 
+ 
+       Non-synchronized  --> ArrayList al = new ArrayList();
+       
+       synchronized  -->  List l = Collection.synchronizedList(al);
+ 
+ 
+ 
+      				

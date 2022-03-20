@@ -1,7 +1,7 @@
  1. The underlying Data structure is HashTable.
- 2. Duplicates are not allowed. If we are trying to insert duplicate, we won't get anny compile or run time errors.
+ 2. Duplicates are not allowed. If we are trying to insert duplicate, we won't get any compile or run time errors.
     But add() method simply returns false. 
- 3. Insertion order is not preserved and all objects will be inserted based on hash-code of objects.
+ 3. Insertion order is not preserved and all objects will be inserted based on hash-code of objects. It is use HashMap internally.
  4. Heterogeneous objects are allowed.
  5. null insertion is possible.
  6. Implements Serializable and Clonable interface but not RandomAccess.

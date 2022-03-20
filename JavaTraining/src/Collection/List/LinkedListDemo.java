@@ -1,5 +1,7 @@
-package Collection;
+package Collection.List;
 
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListDemo {
@@ -21,6 +23,14 @@ public class LinkedListDemo {
 		System.out.println(l); //[c, b, 30, null]
 		l.addFirst("d");
 		System.out.println(l); //[d, c, b, 30, null]
+		
+		//reverse the linkedlist
+		Iterator it = l.descendingIterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());			
+		}
+		
+		
 	}
 
 }

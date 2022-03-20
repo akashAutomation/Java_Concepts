@@ -18,4 +18,6 @@
  10. LinkedList Constructors:
        1. LinkedList l = new LinkedList(); --> creates an empty LinkedList Object.       
        2. LinkedList l = new LinkedList(Collection c); --> creates an equivalent LinkedList Object for the given collection.  
+       
+ 11. It is not thread safe.      
          
