@@ -23,7 +23,7 @@ public class StaticAndNonStaticConcept {
 		 * 
 		 * 7. Recursion--> When a function is calling itself is called recursion.
 		 * 8. We can have inner class as static.
-		 * 9. Static functions can only access static members of the smae class. We can not write instace var. inside static functions.
+		 * 9. Static functions can only access static members of the same class. We can not write instace var. inside static functions.
 		 */	
 		
 		test2();
