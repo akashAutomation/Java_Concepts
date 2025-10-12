@@ -1,4 +1,4 @@
-package Interface;
+package JavaTraining.src.Interface;
 
 public interface WorldBank {
 

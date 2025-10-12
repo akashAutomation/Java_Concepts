@@ -1,8 +1,8 @@
-package OOPsConcepts;
+package JavaTraining.src.OOPsConcepts;
 
 public class StaticAndNonStaticConcept {
 	
-	String name = "Akash";   // non static global var. or instance variable --> while creating a object then instance var is a part of that object. 
+	String name = "Akash";   // non-static global var. or instance variable --> while creating a object then instance var is a part of that object.
 	static int age = 24;	 // static global var.
 
 	public static void main(String[] args) {
@@ -11,19 +11,19 @@ public class StaticAndNonStaticConcept {
 		 * 		a. direct calling
 		 * 		b. calling by class name
 		 * 
-		 * 2. We can call non static method and variables by creating object 
+		 * 2. We can call non-static method and variables by creating object
 		 * 3. Static methods and variable are not part of any object
-		 * 4. We can access static methods and variables by using object reference but it will give a warning
+		 * 4. We can access static methods and variables by using object reference, but it will give a warning
 		 *    "The static field StaticAndNonStaticConcept.age should be accessed in a static way"
 		 *    ex.->  int s = obj.age  --> It is not a good practice to call static methods and var by object reference
 		 * 
 		 * 5. Local variable can not be static. Only global variable can be static.
-		 * 6. We can call main() inside a main() but it will run infinite time and at the end it will give a exception
+		 * 6. We can call main() inside a main() but it will run infinite time and at the end it will give an exception
 		 * 		"java.lang.StackOverflowError". Here is Recursion concept applied.
 		 * 
 		 * 7. Recursion--> When a function is calling itself is called recursion.
 		 * 8. We can have inner class as static.
-		 * 9. Static functions can only access static members of the same class. We can not write instace var. inside static functions.
+		 * 9. Static functions can only access static members of the same class. We can not write instance var. inside static functions.
 		 */	
 		
 		test2();
@@ -40,14 +40,14 @@ public class StaticAndNonStaticConcept {
 		
 	}
 
-	// non static method or instance member function
+	// non-static method or instance member function
 	public void test1() {
-		System.out.println("test1");
+		System.out.println("test1 non-static method");
 	}
 	
 	// static method
 	public static void test2() {
-		System.out.println("test2");
+		System.out.println("test2 static method");
 	}
 	
 	// static inner class
@@ -57,5 +57,5 @@ public class StaticAndNonStaticConcept {
 }
 
 class Test{
-	
+
 }

@@ -1,9 +1,9 @@
-package Polymorphism;
+package JavaTraining.src.Polymorphism;
 
 
 /* 1. Method Overloading --> when the method name is same with different arguments or parameter in same class.
    2. It is also called as Compile Time Polymorphism or Static Polymorphism or Early Binding.
-   3. Compiler is responsible to perform method resolution(means which method is gone to be executed) thats why it is called compile time polymorphism.
+   3. Compiler is responsible to perform method resolution(means which method is gone to be executed) that's why it is called compile time polymorphism.
    
    4. If more than 2 methods of a class(Whether both declared in the same class, or one declared and one inherited) have the same name
       with different arguments or parameter then the method is said to be overloaded.
@@ -25,6 +25,11 @@ public class MethodOverloading {
 //		B b = new B();
 //		b.f1(2);
 		obj.sum(null);
+
+        B b = new B();
+        b.f1(1,2);
+        b.f1(1,"a");
+        b.f1(1);
 	}
 	
 	// We can overload main() as below:
@@ -73,7 +78,22 @@ class A{
 }
 
 class B extends A{
-	public void f1(int x, int y) {
+    /* If you try to create method with same name and arguments if it extends a class which already have identical method
+        then it will show a warning msg "Method 'f1(int x)' is identical to its super method", and then
+        it is called overriding not overloading.
+    */
+
+    public void f1(int x, int y) {
 		System.out.println("f1() of class B ");
 	}
+
+    //overloading
+    public void f1(int x, String y) {
+        System.out.println("f1() of class A overloading ");
+    }
+
+    //overriding
+    public void f1(int x) {
+        System.out.println("f1() of class A overriding ");
+    }
 }

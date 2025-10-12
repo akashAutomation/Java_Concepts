@@ -1,9 +1,9 @@
-package Constructor;
+package JavaTraining.src.Constructor;
 
 public class A {
 
 	public A() {
-		System.out.println("Parent class A defualt cons");
+		System.out.println("Parent class A default cons");
 	}
 
 	public A(int i) {

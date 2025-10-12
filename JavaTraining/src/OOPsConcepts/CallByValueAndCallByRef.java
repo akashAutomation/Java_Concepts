@@ -1,9 +1,9 @@
-package OOPsConcepts;
+package JavaTraining.src.OOPsConcepts;
 
 public class CallByValueAndCallByRef {
 
-	int p;
-	int q;
+	int p=100;
+	int q=200;
 
 	public static void main(String[] args) {
 		CallByValueAndCallByRef obj = new CallByValueAndCallByRef();
@@ -19,7 +19,9 @@ public class CallByValueAndCallByRef {
 		 * 									  ex-> sum(x,y); --> here we are passing a copy of x,y var's values
 		 * 
 		 *  Call by reference --> We are passing a value of object reference
-		 *  					  ex-> swap(obj); --> here we are passing a object reference obj while calling a method
+		 *  					  ex-> swap(obj); --> here we are passing an object reference obj while calling a method
+		 * For objects, the method gets a copy of the reference (not the object itself), so it can modify
+		 * the object’s contents—but not reassign the original reference.
 		 */		
 		
 		int i = obj.sum(x, y);  // Call by value or pass by value
@@ -27,9 +29,13 @@ public class CallByValueAndCallByRef {
 
 		obj.swap(obj);  // Call by reference
 		
-		//after swapping
-		System.out.println(obj.p);
-		System.out.println(obj.q);
+		//after swapping, it changes the p,q value obj object, not changes original values
+		System.out.println("obj p = "+obj.p);
+		System.out.println("obj q = "+obj.q);
+
+        CallByValueAndCallByRef obj2 = new CallByValueAndCallByRef();
+        System.out.println("obj2 p = "+obj2.p);
+        System.out.println("obj2 q = "+obj2.q);
 	}
 
 	public int sum(int a, int b) {

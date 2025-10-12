@@ -1,11 +1,6 @@
-package Inheritance;
+package JavaTraining.src.Inheritance;
 
-public class BMW extends Car{  // "Has-a relationship" --> Class to class relationship
-	
-	/*
-	 * Method Overriding --> When some method is present in parent class as well as child class with the same name
-	 * 						 and same number of arguments, is called Method Overriding.
-	 */
+public class BMW extends Car{
 
 	public void start() {  // Overridden method
 		System.out.println("BMW --> start");
@@ -14,5 +9,9 @@ public class BMW extends Car{  // "Has-a relationship" --> Class to class relati
 	public void theftSafety() {
 		System.out.println("BMW --> theftSafety");
 	}
+
+    public static void color() {
+        System.out.println("BMW --> color () static method");
+    }
 
 }

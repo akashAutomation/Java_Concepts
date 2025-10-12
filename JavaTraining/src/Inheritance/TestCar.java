@@ -1,4 +1,6 @@
-package Inheritance;
+package JavaTraining.src.Inheritance;
+
+import JavaTraining.src.Inheritance.BMW;
 
 public class TestCar {
 
@@ -17,15 +19,10 @@ public class TestCar {
 		 * 														also called Top casting
 		 * 
 		 * 5. Only overridden methods and parent class methods will be called using dynamic polymorphism.
-		 *    ex-> we can not access theftSafty() but we can accees overridden method(ex.- start()) of BMW class 
-		 *    
-		 * 6. Top casting --> Child class object can be referred by parent class reference var.  
-		 * 7. Down casting --> Parent class object can be referred by child class reference var.
-		 * 8. Down casting can be done in java by cast parent class in child class and referred by child class reference var.
-		 *    But it will give "ClassCastException" at run time.
-		 *    ex-> BMW b1 = (BMW) new Car();
+		 *    ex-> we can not access theftSafety() but we can access overridden method(ex.- start()) of BMW class
+		 *
 		 */
-		 BMW bmw = new BMW();
+		 BMW bmw = new BMW(); //has-a relationship
 		 bmw.start(); //Static Polymorphism or Compile Time Polymorphism
 		 bmw.stop();
 		 bmw.refuel();

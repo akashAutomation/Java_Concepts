@@ -1,4 +1,4 @@
-package Constructor;
+package JavaTraining.src.Constructor;
 
 //with this keyword
 
@@ -10,7 +10,7 @@ public class Constructor {
 	 * 2. Constructor name always same as class name
 	 * 3. Constructors are independent, we can not create constructor inside any methods.
 	 * 4. To call any constructor first create object 
-	 * 5. Constructor overloading can we done
+	 * 5. Constructor overloading can be done
 	 * 6. By using this keyword We can initialize class variables using constructors --> "this" keyword always represent current class
 	 *    ex-> this.name = name; -> this.class variable = local variable
 	 *    
@@ -39,7 +39,7 @@ public class Constructor {
 		this.name = name; // this.class variable = local var
 		this.age = age; // this.class variable = local var
 
-		//name = n1; --> class variables can be initialize without this keyword		
+		//name = n1; --> class variables can be initialized without this keyword
 	}
 	
 	public static void main(String[] args) {

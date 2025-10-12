@@ -1,4 +1,4 @@
-package Inheritance;
+package JavaTraining.src.Inheritance;
 
 public class Vehicle {
 

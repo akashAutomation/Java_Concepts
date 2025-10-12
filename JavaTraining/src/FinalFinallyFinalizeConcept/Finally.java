@@ -1,18 +1,18 @@
-package FinalFinallyFinalizeConcept;
+package JavaTraining.src.FinalFinallyFinalizeConcept;
 
 public class Finally {
 
 	/*
 	 * 1. By using finally keyword we can execute those lines which are present in finally block even after throwing any exception 
 	 * 2. finally is always used with try block
-	 * 3. Any execption is coming or not, finally block is always executed. 
+	 * 3. Any execution is coming or not, finally block is always executed.
 	 */	
 	
 	public static void main(String[] args) {
 		test1();
-		//test2();
-		//test3();
-		//test4();
+		test2();
+		test3();
+		test4();
 	}
 
 	public static void test1() {

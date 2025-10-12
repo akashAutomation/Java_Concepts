@@ -1,4 +1,4 @@
-package BasicConcepts;
+package JavaTraining.src.BasicConcepts;
 
 /* 1. Type casting is a process that converts a data type into another data type in both ways automatically and manually.
       Automatic conversion done by compiler and manual conversion performed by programmer.
@@ -22,7 +22,7 @@ public class TypeConversion {
 		System.out.println("y = "+y);
 		
 		float a = 3.4f;
-		// int b = a;  --> can not write like this, error
+       // int b = a; // --> can not write like this, error
 		int b = (int)a; // narrowing conversion
 		System.out.println("b = "+b);
 		

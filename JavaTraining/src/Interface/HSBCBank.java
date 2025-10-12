@@ -1,13 +1,13 @@
-package Interface;
+package JavaTraining.src.Interface;
 
-public class HSBCBank implements USBank, BrazilBank {  // Is-a Relationship --> Interface and class relationship
+public class HSBCBank implements USBank, BrazilBank {  // Is-a Relationship
 	
 	/*
-	 * 1. If a class is implementing any Interface then its mandatory to define/override all the methods of Interface.
+	 * 1. If a class is implementing any Interface then it is mandatory to define/override all the methods of Interface.
 	 * ex-> here we are implementing USBank interface so we have to define/override all the methods of USBank
 	 * 
-	 * 2. We are achieving multiple inheritance by using interface 
-	 * 3. Class can implements none, one or more interfaces as well as extend any one class
+	 * 2. We can achieve multiple inheritance by using interface
+	 * 3. Class can implement none, one or more interfaces as well as extend any one class
 	 *    ex-> public class HSBCBank extends TestBank implements USBank, BrazilBank
 	 */
 	
@@ -18,7 +18,7 @@ public class HSBCBank implements USBank, BrazilBank {  // Is-a Relationship --> 
 	}
 	
 	@Override
-	public void debit() { // overridden method from USBank
+    public void debit() { // overridden method from USBank
 		System.out.println("hsbc --> debit");
 	}
 
@@ -50,4 +50,20 @@ public class HSBCBank implements USBank, BrazilBank {  // Is-a Relationship --> 
 		System.out.println("hsbc --> capital");
 		
 	}
+
+    @Override
+    public void b(){
+        System.out.println("hsbc --> b()");
+    }
+
+    /* if you don't want to use overridden default method of interface and wants to use original default method of interface
+       then below calls the default method from the interface.
+     */
+    public void callingInterfaceDefaultMethod(){
+        USBank.super.b();
+    }
+
+    void c(){
+        System.out.println("hsbc --> c()");
+    }
 }

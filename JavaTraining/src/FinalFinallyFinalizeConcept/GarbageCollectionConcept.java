@@ -1,4 +1,4 @@
-package FinalFinallyFinalizeConcept;
+package JavaTraining.src.FinalFinallyFinalizeConcept;
 
 public class GarbageCollectionConcept {
 
@@ -6,7 +6,7 @@ public class GarbageCollectionConcept {
 	 * 2. No delete keyword in java
 	 * 3. When there is no reference to an object, then that object is assumed to be no longer needed and the memory occupied 
 	 *    by the object are released.
-	 * 4. This technique is is called Garbage Collection. This is accomplished by the JVM.
+	 * 4. This technique is called Garbage Collection. This is accomplished by the JVM.
 	 * 
 	 * 5. Whenever you run a java program, JVM created 3 threads
 	 *    a) main thread  --> to execute main()
@@ -18,7 +18,7 @@ public class GarbageCollectionConcept {
 	 * 8. Garbage collector thread before sweeping out an abandoned object, it calls finalize() of that object.
 	 * 9. After finalize() is executed, object is destroyed from the memory.
 	 * 10. We can call Garbage Collector explicitly using System.gc() or RunTime.getRunTime().gc()      
-	 * 11. But it is just a request to garbage collector not a command. It is up to Garbage collector to honour to this requst
+	 * 11. But it is just a request to garbage collector not a command. It is up to Garbage collector to honour to this request
 	 * 
 	 * 12. Advantage of GC -> Increase memory efficiency and decreases the chances for memory leak.
 	 * 

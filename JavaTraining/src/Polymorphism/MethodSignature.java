@@ -1,4 +1,4 @@
-package Polymorphism;
+package JavaTraining.src.Polymorphism;
 
 public class MethodSignature {
 
@@ -25,5 +25,7 @@ public class MethodSignature {
 	public static void main(String[] args) {
 		MethodSignature obj =  new MethodSignature();
 		obj.m1();
+        obj.m2(2);
+        obj.m3("abc");
 	}
 }

@@ -1,4 +1,4 @@
-package FinalFinallyFinalizeConcept;
+package JavaTraining.src.FinalFinallyFinalizeConcept;
 
 public class C {
 	public int a; // instance variable --> assigned memory only when the object is created

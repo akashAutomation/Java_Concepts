@@ -1,6 +1,7 @@
-package OOPsConcepts;
+package JavaTraining.src.OOPsConcepts;
 
-import BasicConcepts.AccessModifiers;
+
+import JavaTraining.src.BasicConcepts.AccessModifiers;
 
 public class AceessModifierTest extends AccessModifiers {
 

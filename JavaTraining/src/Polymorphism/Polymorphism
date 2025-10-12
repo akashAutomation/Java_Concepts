@@ -1,8 +1,36 @@
 Poly - many 
 morphs - forms
 
---> One name but multiple forms is called polymorphism.
+Polymorphism in Java is a core concept of object-oriented programming that allows objects to take on many forms.
+More precisely, it means that a single method call can behave differently depending on the actual object type
+that it’s acting on — even if the reference type is the same.
 
---> two types
-	1. Static or compile time polymorphism or Early binding --> ex.- Overloading, method hiding
-	2. Dynamic or Run time polymorphism or late binding  --> ex.- Overriding 
+1. One name but multiple forms is called polymorphism.
+2. polymorphism only applies to instance methods(non-static methods), not static ones.
+
+two types
+	1. Static or compile time polymorphism or Early binding --> ex.- Overloading
+	2. Dynamic or Run time polymorphism or late binding  --> ex.- Overriding
+
+Why Polymorphism Matters:
+1. Enables flexible and reusable code
+2. Supports dynamic method dispatch
+3. Makes it easier to work with interfaces and abstract classes
+4. Helps implement design patterns like Strategy, Command, and Observer
+
+
+Method Hiding:
+    In Java, method hiding occurs when a static method in a subclass has the same signature
+    as a static method in its superclass. It’s similar to method overriding, but applies only to
+    static methods — and the behavior is quite different.
+
+
+Why Method Hiding Is Not Polymorphism:
+   Static methods are resolved at compile time, based on the reference type, not the object.
+   There's no dynamic dispatch — the JVM doesn’t look at the actual object type.
+   You don’t get polymorphic behavior when hiding static methods.
+
+   method hiding and top casting do intersect conceptually, but they’re not the same. but it’s not the same thing. Top casting affects both static and instance method calls,
+   but only instance methods behave polymorphically.
+   They are different because
+   method hiding applies on static methods and top casting applies on non static methods.

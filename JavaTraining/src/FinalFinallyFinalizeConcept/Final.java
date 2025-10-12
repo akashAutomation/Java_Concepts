@@ -1,4 +1,4 @@
-package FinalFinallyFinalizeConcept;
+package JavaTraining.src.FinalFinallyFinalizeConcept;
 
 public class Final extends C{  // here we can not extend A class because it is final
 
@@ -24,7 +24,7 @@ public class Final extends C{  // here we can not extend A class because it is f
 	
 	/*
 	 * we can not override a final method
-	 * ex-> We are extends C class and C has a start() with final keyword so we can not override.
+	 * ex-> We extend C class and C has a start() with final keyword so we can not override.
 	 * 
 	 * 	public void start() { 
 	 * 		System.out.println("Final-->start()"); 
