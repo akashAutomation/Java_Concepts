@@ -1,4 +1,4 @@
-package Collection.Map;
+package JavaTraining.src.Collection.Map;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ public class HashMapDemo {
 		 * 3. key can not be duplicate, if there is duplicate key then it will give the latest value 
 		 * 4. can store n number of null values but only one null key
 		 * 5. HashMap is not thread safe - unsynchronized
-		 * 6. Hash Code of null key is always zero. So null key and it's value is always store in 0 index in map.
+		 * 6. Hash Code of null key is always zero. So null key, and it's value is always store in 0 index in map.
 		 * 7. default initial capacity 16 & fill ratio 0.75
 		 */		
 		
@@ -66,18 +66,15 @@ public class HashMapDemo {
 		//3. iterate hashmap using java 8 for each and lambda
 		capitalMap.forEach((k,v) -> System.out.println("key = "+k+" value = "+v));
 		
-		//4. immutable Map with only one single entry --> we can not change or add entry in immutable map
+		//4. singleton map - immutable Map with only one single entry --> we can not change or add entry in immutable map
 		Map<Integer, String> m1 = Collections.singletonMap(1, "a"); // using singletonMap() we can only add single entry
-		System.out.println(m1.get(1));
-		// m1.put(2,"b"); --> UnsupportedOperationException 
-		
+		System.out.println("m1 = "+m1.get(1));
+		// m1.put(2,"b"); --> UnsupportedOperationException runtime exception
+
 		//5. empty map
 		Map<Integer, String> m2 = Map.of();
 		//m2.put(11, "aa"); --> UnsupportedOperationException
-		
-		//6. singleton map
-		Map<Integer, String> m3 = Map.of(111, "aaa");
-		//m3.put(2, "a"); --> UnsupportedOperationException
+
 	}
 
 }

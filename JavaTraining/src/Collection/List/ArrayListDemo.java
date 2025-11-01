@@ -1,4 +1,4 @@
-package Collection.List;
+package JavaTraining.src.Collection.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.Iterator;
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
-		//ArrayList l = new ArrayList();
+		// ArrayList lq = new ArrayList(); // Raw type, can hold any object
 		ArrayList<Object> l = new ArrayList<Object>();
 		l.add("A");
 		l.add(10);
@@ -25,21 +25,21 @@ public class ArrayListDemo {
 		l.add("N");
 		System.out.println(l); //[A, 10, M, 1.55, N]
 		
-		// ways to itereate --> 1. by for loop:
+		// ways to iterate --> 1. by for loop:
         // 2. by for each
 		  System.out.println("----------");
 		  for(Object o : l) {
 			 System.out.println(o); 
 		  }
 		
-		  // 3. by stream with lamda 
+		  // 3. by stream with lambda
 		  System.out.println("----------");		  
 		  l.stream().forEach(a -> System.out.println(a));
 		  
 		  // 4. by iterator
 		  System.out.println("----------");
 		  Iterator<Object> it = l.iterator();
-		  
+
 		  while(it.hasNext()) {
 			  System.out.println(it.next());
 		  }

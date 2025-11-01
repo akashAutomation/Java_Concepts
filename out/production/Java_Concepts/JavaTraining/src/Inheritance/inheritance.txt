@@ -1,0 +1,37 @@
+
+   Inheritance is a core concept of Object-Oriented Programming (OOP), it allows one class to acquire the
+   properties and behaviors of another, promoting code reuse and logical hierarchy.
+   It’s implemented using the extends keyword.
+
+   In Inheritance, child class can inherit only one parent class --> means multiple inheritance cannot achieve
+
+
+ 1. Single inheritance - One subclass inherits from one superclass.
+ 2. Multilevel - A class inherits from a class that already inherits another class.
+ 3. Hierarchical - Multiple subclasses inherit from a single superclass.
+ 4. Multiple - not supported by java because if 2 or more parent have same method then there is ambiguity problem will occur. this problem is also
+			   called ambiguity problem or diamond access problem. It is achievable using interface.
+ 5. Hybrid - It is a mix of two or more of the above types of inheritance. In Java, we can achieve hybrid inheritance only through Interfaces
+             if we want to involve multiple inheritance to implement Hybrid inheritance.
+             not supported by java this problem is also called ambiguity problem or diamond access problem.
+
+IS-A Relationship: Inheritance also called is-a relationship.
+Inheritance represents an IS-A relationship, also known as a parent-child relationship. It signifies that a subclass is a type of its superclass.
+We can achieve by using extends or implement keywords.
+For example: public class Car extends Vehicle{} --> is-a relationship
+A Car IS-A Vehicle.
+A Dog IS-A Animal.
+A Surgeon IS-A Doctor.
+
+HAS-A relationship(Association):
+Association is a relationship where one class uses or interacts with another class by holding a reference to it.
+It represents a HAS-A relationship in object-oriented programming.
+We can achieve by creating a object of that class.
+The has-a relationship is not part of inheritance. It’s part of composition or aggregation,
+which is a different kind of object-oriented relationship.
+Example :  Engine engine = new Engine(); // Car has-a Engine
+Student HAS-A Address
+Laptop HAS-A Processor
+
+Note: If you want to use properties of parent class without using extend keyword then by creating object of parent class
+      in child class then it is called has-a relationship.

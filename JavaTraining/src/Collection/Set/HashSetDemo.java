@@ -1,4 +1,4 @@
-package Collection.Set;
+package JavaTraining.src.Collection.Set;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,7 +7,7 @@ import java.util.Set;
 public class HashSetDemo {
 
 	public static void main(String[] args) {
-		HashSet l = new HashSet();
+		HashSet<Object> l = new HashSet<Object>();
 		l.add("A");
 		l.add(10);
 		l.add(null);
@@ -32,7 +32,7 @@ public class HashSetDemo {
 		
 		// get the difference
 		Set<Integer> difference = new HashSet<Integer>(s1);
-		difference.removeAll(s2);
+		difference.removeAll(s2);    // it will remove common element from difference that present in s2
 		System.out.println("difference "+difference);
 		
 		

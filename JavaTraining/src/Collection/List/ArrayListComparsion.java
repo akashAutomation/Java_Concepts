@@ -1,4 +1,4 @@
-package Collection.List;
+package JavaTraining.src.Collection.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;

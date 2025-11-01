@@ -1,9 +1,9 @@
  1. The underlined data structure is Double LinkedList.
  2. Duplicates are allowed.
  3. Insertion Order is preserved.
- 4. Heterogenous objects are allowed. 
+ 4. Heterogeneous objects are allowed.
  5. Null insertion is possible.
- 6. LinkedList implements Serializable and Clonable interfaces but not RandomAccess inerface.
+ 6. LinkedList implements Serializable and Clonable interfaces but not RandomAccess interface.
  7. LinkedList is the best choice if our frequent operation is insertion or deletion in middle.
  8. LinkedList is the worst choice if our frequent operation is retrieval operation.
  9. usually we can use LinkedList to implement stacks and queue. To provide support for this requirements LinkedList class

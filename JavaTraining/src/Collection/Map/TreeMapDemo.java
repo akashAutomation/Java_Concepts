@@ -1,4 +1,4 @@
-package Collection.Map;
+package JavaTraining.src.Collection.Map;
 
 import java.util.Comparator;
 import java.util.Set;
@@ -12,7 +12,7 @@ public class TreeMapDemo {
 		 * 2. sort the elements by Keys  
 		 * 3. also called Red Black Tree
 		 */
-		
+
 		TreeMap<Integer, String> m1 = new TreeMap<Integer, String>();
 		m1.put(1000, "A");
 		m1.put(3000, "B");
@@ -28,11 +28,11 @@ public class TreeMapDemo {
 		System.out.println("higher Entry = "+m1.higherEntry(3000)); //4000=E
 		System.out.println("lower Entry = "+m1.lowerEntry(3000)); //2000=C
 		
-		// get entry which is less then 3000
+		// get entry which is less than 3000
 		Set<Integer> s = m1.headMap(3000).keySet();
 		System.out.println(s); //[1000, 2000]
 		
-		// get entry which is greater then and equal to 3000
+		// get entry which is greater than and equal to 3000
 		Set<Integer> s1 = m1.tailMap(3000).keySet();
 		System.out.println(s1); //[3000, 4000, 5000]
 		

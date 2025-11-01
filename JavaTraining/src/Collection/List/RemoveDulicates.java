@@ -1,4 +1,4 @@
-package Collection.List;
+package JavaTraining.src.Collection.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +15,7 @@ public class RemoveDulicates {
 		
 		// 1. using LinkedHashSet
 		HashSet<Integer> lhs = new HashSet<Integer>(al);
+        System.out.println(lhs);
 		
 		ArrayList<Integer> withoutDuplicate = new ArrayList<Integer>(lhs);
 		System.out.println(withoutDuplicate);

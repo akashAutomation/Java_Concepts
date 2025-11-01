@@ -1,4 +1,4 @@
-package Collection.Set;
+package JavaTraining.src.Collection.Set;
 
 import java.util.EnumSet;
 import java.util.Iterator;

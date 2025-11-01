@@ -1,0 +1,27 @@
+1. Map is not the child interface of Collection because a Map represents a fundamentally
+ 	              different data structure: it stores key–value pairs, not just individual elements like
+ 	              a Collection does.
+2. If we want to represent a group of individual objects as key value pairs then we should go for Map interface.
+   ex- RollNo.   Name
+ 		101       a
+ 		102		  b
+ 	    103       a
+
+3. Both key and value are objects, duplicated keys are not allowed but values can be duplicated.
+4. Common Implementations: HashMap, LinkedHashMap, TreeMap, HashTable
+
+
+### 🧭 Java Map Implementations and Ordering
+
+| Map Type           | Sorted by Keys?   | Maintains Insertion Order?   | Notes |
+|--------------------|------------------ |----------------------------- |-------|
+| `HashMap`          | ❌ No             | ❌ No                        | Unordered; fast access |
+| `LinkedHashMap`    | ❌ No             | ✅ Yes                       | Preserves insertion order |
+| `TreeMap`          | ✅ Yes            | ❌ N/A                       | Sorted by natural key order or custom comparator |
+| `Hashtable`        | ❌ No             | ❌ No                        | Legacy; thread-safe but unordered |
+| `ConcurrentHashMap`| ❌ No             | ❌ No                        | Thread-safe; no ordering guarantees |
+
+
+
+
+

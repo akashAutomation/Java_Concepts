@@ -1,12 +1,18 @@
  1. The underlined data structure is Resizable Array or Growable Array.
  2. Duplicates are allowed
  3. Insertion Order is preserved.
- 4. Heterogenous objects are allowed(except TreeSet & TreeMap everywhere heterogenous objects are allowed) 
+ 4. Heterogeneous objects are allowed(except TreeSet & TreeMap everywhere heterogeneous objects are allowed)
+
+ - Homogeneous objects → All elements are of the same type.
+ Example: List<Integer> contains only integers.
+ - Heterogeneous objects → Elements are of different types.
+ Example: List<Object> can contain an Integer, a String, a Double, or even a custom class object in the same list.
+
  5. Null insertion is possible.
  
  6. ArrayList Constructors -->
   
-    1. ArrayList al = new ArrayList();
+    1. ArrayList al = new ArrayList(); --> Raw type, can hold any object
        Creates an empty ArrayList object with default initial capacity 10. Once array list reaches its max capacity a new arraylist
        will be created with new capacity:
        				new capacity = (current capacity * 3/2)+1
@@ -29,8 +35,11 @@
                       When a thread is already working on an object and preventing another thread on working on the same object, this 
                       process is called Thread safety.
  
- 10. By default ArrayList is non-synchronized but we can get synchronized version of ArrayList by using COllection class synchronizedList() method.
-       method signature --> public static List synchronizedList(List i) 
+ 10. A synchronized list in Java is a thread-safe version of a List where all operations are synchronized,
+     meaning only one thread can access the list at a time.
+ 11. By default ArrayList is non-synchronized but we can get synchronized version of ArrayList by using Collection class synchronizedList() method.
+
+       method signature --> public static List synchronizedList(List i)
  
        Non-synchronized  --> ArrayList al = new ArrayList();
        

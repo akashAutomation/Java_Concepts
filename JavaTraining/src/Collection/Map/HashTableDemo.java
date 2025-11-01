@@ -1,4 +1,4 @@
-package Collection.Map;
+package JavaTraining.src.Collection.Map;
 
 import java.util.Hashtable;
 import java.util.TreeMap;
@@ -22,6 +22,7 @@ public class HashTableDemo {
 		m1.put(4000, "E");
 		//m1.put(null, "F"); --> not allowed
 		//m1.put(5000, null); --> not allowed
+        System.out.println(m1);
 	}
 
 }
