@@ -1,4 +1,4 @@
-package BasicPrograms.Pattern;
+package JavaTraining.src.BasicPrograms.Pattern;
 
 public class Pyramid {
 

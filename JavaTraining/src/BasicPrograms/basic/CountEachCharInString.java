@@ -1,4 +1,4 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ public class CountEachCharInString {
 //		String s = "hello world java hello world";
 //		s = s.toLowerCase();
 //		s = s.replaceAll(" ", "");
-//			
+//
 //		Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 //		for(int i=0; i<s.length(); i++) {
 //			int count=0;
@@ -21,7 +21,7 @@ public class CountEachCharInString {
 //			}
 //			map.put(s.charAt(i), count);
 //		}
-//		
+//
 //		System.out.println(map);
 		
 	//2. for each word	
@@ -38,8 +38,8 @@ public class CountEachCharInString {
 				}
 				map.put(arr[i], count);
 			}
-				
-			System.out.println(map);		
+
+			System.out.println(map);
 	}
 
 }

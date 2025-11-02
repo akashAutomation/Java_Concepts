@@ -1,4 +1,4 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,7 +12,7 @@ public class ReadDataFromTextFile {
 	public static void main(String[] args) throws IOException {		
 	
 	// 1. using FileReader and BufferedReader class	
-		FileReader	file = new FileReader("test\\Sample.txt");	
+		FileReader	file = new FileReader("JavaTraining/test/Sample.txt");
 		BufferedReader br =  new BufferedReader(file);
 		
 		String s;

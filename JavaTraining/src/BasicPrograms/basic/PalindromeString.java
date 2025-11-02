@@ -1,4 +1,4 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
 
 public class PalindromeString {
 
@@ -16,9 +16,9 @@ public class PalindromeString {
 		String rev = "";
 			for(int i=s.length()-1; i>=0; i--) {
 				rev = rev+s.charAt(i);
-			}		
+			}
 			System.out.println(rev);
-			
+
 			if(s.equalsIgnoreCase(rev)) {
 				System.out.println("palindrome");
 			}
@@ -38,6 +38,18 @@ public class PalindromeString {
 //			else {
 //				System.out.println("not palindrome");
 //			}
+
+
+        //3. using equals()
+//      StringBuffer sb= new StringBuffer(s);
+//      String rev = sb.reverse().toString();
+//
+//		if(rev.equals(s)) {
+//			System.out.println("palindrome");
+//		}
+//		else {
+//			System.out.println("not palindrome ");
+//		}
 			
 					
 	}	

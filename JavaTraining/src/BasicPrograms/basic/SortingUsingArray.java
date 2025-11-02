@@ -1,4 +1,4 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,4 +1,6 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
+
+import java.util.Arrays;
 
 public class MaxAndMinInArray {
 
@@ -19,6 +21,10 @@ public class MaxAndMinInArray {
 		
 		System.out.println("max = "+max+", min = "+min);
 
+        //2
+//        Arrays.sort(a);
+//        System.out.println("max1 = "+a[a.length-1]);
+//        System.out.println("min1 = "+a[0]);
 	}
 
 }

@@ -1,4 +1,4 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
 
 public class PrimeNumber {
 
@@ -7,6 +7,8 @@ public class PrimeNumber {
 		 * 1. Natural number > 1 
 		 * 2. Which has only two factors 1 and itself
 		 *    ex.-> 2,3,5,7,11,13,...
+		 * 3. 1 is not a prime number
+		 * 4. 2 is the only even prime number
 		 */
 		
 		int num = 15;

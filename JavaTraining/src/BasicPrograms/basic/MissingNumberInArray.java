@@ -1,4 +1,8 @@
-package BasicPrograms.basic;
+package JavaTraining.src.BasicPrograms.basic;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MissingNumberInArray {
 
@@ -9,20 +13,44 @@ public class MissingNumberInArray {
 		 *        3. values should be in range
 		 */
 		
-		int a[] = {1,2,4,5};
-		int sum1 = 0; // for start num to end number
-		int sum2 = 0; // sum of numbers present in array
-		for(int i=1; i<=5; i++) {
-			sum1 = sum1+i;
-		}
-		
-		for(int i=0; i<a.length; i++) {
-			sum2 = sum2+a[i];
-		}
-		
-		System.out.println("missing number = "+(sum1-sum2));
-		
+		int a[] = {1,2,4,5,7,9,10};
 
-	}
+        //1. using array
+        Arrays.sort(a);
+        int max=a[a.length-1];
+        int min = a[0];
+
+        for(int i=min; i<=max; i++){
+            boolean b = false;
+            for(int j=0; j<a.length; j++){
+                if(i==a[j]){
+                    b=true;
+                    break;
+                }
+            }
+            if(b==false){
+                System.out.println("missing = "+i);
+            }
+
+        }
+
+        //2. using set
+//        Set<Integer> set = new HashSet<>();
+//        for (int num : a) {
+//            set.add(num);
+//        }
+//
+//        int min = Arrays.stream(a).min().getAsInt();
+//        int max = Arrays.stream(a).max().getAsInt();
+//
+//        System.out.print("Missing numbers: ");
+//        for (int i = min; i <= max; i++) {
+//            if (!set.contains(i)) {
+//                System.out.print(i + " ");
+//            }
+//        }
+
+
+    }
 
 }
