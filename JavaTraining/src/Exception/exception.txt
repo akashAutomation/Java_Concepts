@@ -1,0 +1,56 @@
+🧩 What is an Exception?
+- An exception is an object that indicates an error or unusual condition in a program.
+- When an exception occurs, the JVM stops normal execution and looks for code to handle it.
+- If not handled, the program terminates abnormally.
+- At the top of the hierarchy is Throwable, which has two main branches:
+    Throwable
+     ├── Exception
+     │    ├── Checked Exceptions
+     │    │    ├── IOException
+     │    │    ├── SQLException
+     │    │    └── FileNotFoundException
+     │    └── RuntimeException (Unchecked)
+     │         ├── NullPointerException
+     │         ├── ArithmeticException
+     │         └── ArrayIndexOutOfBoundsException
+     └── Error
+          ├── OutOfMemoryError
+          ├── StackOverflowError
+          └── VirtualMachineError
+
+
+🔑 Types of Exceptions in Java
+- Checked Exceptions:
+    - Verified at compile time.
+    - Must be either handled with try-catch or declared with throws.
+    - Examples: IOException, SQLException, FileNotFoundException.
+
+- Unchecked Exceptions (Runtime Exceptions):
+    - Occur during runtime, not checked at compile time.
+    - Examples: NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException.
+
+- Errors:
+    - Serious problems that applications should not try to handle.
+    - Examples: OutOfMemoryError, StackOverflowError.
+
+🧪 Exception Handling Keywords
+- try → Block of code that may throw an exception.
+- catch → Block that handles the exception.
+- finally → Block that always executes (used for cleanup like closing files).
+- throw → Used to explicitly throw an exception.
+- throws → Declares exceptions a method may throw.
+
+⚖️ Why Exception Handling Matters
+- Prevents program crashes.
+- Provides meaningful error messages.
+- Ensures resources (files, DB connections) are safely closed.
+- Improves reliability and maintainability of applications.
+
+
+🧩 What is StackOverflowError?
+- Definition: It’s a runtime error in Java that occurs when the call stack memory is exhausted.
+- Type: It’s an Error, not an Exception → meaning it’s a serious issue that applications typically shouldn’t try to handle.
+- Package: java.lang.StackOverflowError.
+- Cause: Usually caused by deep or infinite recursion (a method calling itself endlessly without a proper base condition).
+- Solution: - Increase stack size (via JVM options like -Xss) only if recursion depth is valid and unavoidable.
+            - Optimize algorithms to avoid excessive method calls.
