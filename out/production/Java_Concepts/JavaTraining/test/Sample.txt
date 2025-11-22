@@ -1,3 +1,0 @@
-Hi, This is Akash.
-Welcome to java.
-Selenium with java.
