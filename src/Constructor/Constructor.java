@@ -6,19 +6,19 @@ public class Constructor {
 	/*
 	 * Constructor --> It is class entity which is used to define some class features while creating the object. It is a member function of a class.
 	 * 1. Constructor will never return any value --> we can not write return statement inside constructor, if we write return then
-	 *    it will become method 
-	 * 2. Constructor name always same as class name
+	 *    it will become method.
+	 * 2. Constructor name always same as class name.
 	 * 3. Constructors are independent, we can not create constructor inside any methods.
-	 * 4. To call any constructor first create object 
-	 * 5. Constructor overloading can be done
-	 * 6. By using this keyword We can initialize class variables using constructors --> "this" keyword always represent current class
+	 * 4. To call any constructor first create object .
+	 * 5. Constructor overloading can be done.
+	 * 6. By using this keyword We can initialize class variables using constructors --> "this" keyword always represent current class.
 	 *    ex-> this.name = name; -> this.class variable = local variable
 	 *    
-	 * 7. If you don't want to use this keyword to initialize class variables then provide different name of local variable in constructor
+	 * 7. If you don't want to use this keyword to initialize class variables then provide different name of local variable in constructor.
 	 *    ex-> name = n1 
-	 * 8. Constructor can not be static
-	 * 9. It can be only default, public, protected & private
-	 * 10. If you don't define any constructor in class, then there is always one hidden constructor of class that is called default constructor
+	 * 8. Constructor can not be static and final.
+	 * 9. It can be only default, public, protected & private.
+	 * 10. If you don't define any constructor in class, then there is always one hidden constructor of class that is called default constructor.
 	 */	
 	String name;
 	int age;

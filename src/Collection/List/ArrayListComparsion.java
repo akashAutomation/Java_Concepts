@@ -27,7 +27,11 @@ public class ArrayListComparsion {
 		ArrayList<String> l4 = new ArrayList<String>(Arrays.asList("a","b","c", "d"));
 		ArrayList<String> l5 = new ArrayList<String>(Arrays.asList("a","b","c", "e"));
 		l4.retainAll(l5);
-		System.out.println(l4);
+		System.out.println(l4); //[a, b, c]
+
+        //reverse
+        ArrayList<String> l6 = new ArrayList<String>(Arrays.asList("a","b","c", "d"));
+        System.out.println(l6.reversed());
 	}
 
 }

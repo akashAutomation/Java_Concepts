@@ -3,7 +3,7 @@ package BasicPrograms.basic;
 public class PrimeNumber {
 
 	public static void main(String[] args) {
-		/*
+		/* prime number(अभाज्य संख्याएँ)
 		 * 1. Natural number > 1 
 		 * 2. Which has only two factors 1 and itself
 		 *    ex.-> 2,3,5,7,11,13,...

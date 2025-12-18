@@ -3,8 +3,8 @@ package Polymorphism;
 
 /* 1. Method Overloading --> when the method name is same with different arguments or parameter in same class.
    2. It is also called as Compile Time Polymorphism or Static Polymorphism or Early Binding.
-   3. Compiler is responsible to perform method resolution(means which method is gone to be executed) that's why it is called compile time polymorphism.
-   
+   3. Compiler is responsible to perform method resolution(means which method is gone to be executed) that's why it is called
+      compile time polymorphism.
    4. If more than 2 methods of a class(Whether both declared in the same class, or one declared and one inherited) have the same name
       with different arguments or parameter then the method is said to be overloaded.
    5. Biggest advantage is that It provides more flexibility to programmer because complexity of programming is gone to be reduced.  
@@ -43,10 +43,10 @@ public class MethodOverloading {
 	}
 
 	/*
-	 * 1. You can not create a method inside a method 
-	 * 2. Same method name with same number and same data type of arguments are not allowed
+	 * 1. You can not create a method inside a method.
+	 * 2. Same method name with same number and same data type of arguments are not allowed.
 	 * 	  ex.-> sum(int, int) and sum(int, int) are not allowed 
-	 * 3. Same method name with same number and different data type of arguments are allowed 
+	 * 3. Same method name with same number and different data type of arguments are allowed.
 	 *    ex.-> sum(int, String) and sum(String, int) are allowed
 	 */	
 	

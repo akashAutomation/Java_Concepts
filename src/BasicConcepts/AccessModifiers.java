@@ -4,17 +4,15 @@ public class AccessModifiers {
 
 	/* public > protected > default > private
 	 * 1. public, protected, private, default
-	 *      a. private -> can not access from outside the class body. Only can access from the same class
-     * 		   					  in which they are declared.
+	 *      a. private -> can not access from outside the class body. Only can access from the same class in which they are declared.
      * 		b. protected -> can be access from any class of the same package and child class(subclass) from other package.
-     * 								By using child class reference only, we can access protected members in child class of different package
+     * 						By using child class reference only, we can access protected members in child class of different package.
      * 		c. default -> they are accessible within the same package.
      *      d. public  -> they are accessible from any class of any package.
      *
 	 * 
 	 * 2. For classes ->
-	 * 		a. For outer class, there can be only 2 possibilities, either class is a public or just a class which means 
-	 * 		   it is of default type.
+	 * 		a. For outer class, there can be only 2 possibilities, either class is a public or just a class which means it is of default type.
 	 * 		b. For inner class any among 4 access modifiers can be used.
 	 * 		c. There can be only one public class in a single java file.
 	 * 		d. The name of the java file must be the same as the name of the public class.

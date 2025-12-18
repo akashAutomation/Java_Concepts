@@ -16,19 +16,23 @@ public class Final extends C{  // here we can not extend A class because it is f
 	 */
 	public static void main(String args[]) {
 		// final keyword is used to define the constant value.
-		
-		 final int i = 20;  // constant value or can not change the value of i 
-		 
-		 
+		int k=0;
+        final int i = k;  // constant value or can not change the value of i
+        k=1;
+        System.out.println("k= "+k+", i= "+i);
 	}
 	
 	/*
 	 * we can not override a final method
 	 * ex-> We extend C class and C has a start() with final keyword so we can not override.
-	 * 
-	 * 	public void start() { 
-	 * 		System.out.println("Final-->start()"); 
+	 *
+	 * 	public void start() {
+	 * 		System.out.println("Final-->start()");
 	 * 	}
 	 */
+
+    public final void b(){ //can not override a final method b()
+        System.out.println("final method b()");
+    }
 	
 }

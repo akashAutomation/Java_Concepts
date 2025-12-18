@@ -4,7 +4,7 @@ package OOPsConcepts;
 			objects	are created. It is a logical entity. It can not be physical.
 	
    2. When we create any class in java then always it's parent class will be "Object" class which is present in java.lang package.
-   3. Object class is the root of the class hierarchy
+   3. Object class is the root of the class hierarchy.
    4. If we are not extending any class in child class then always it's parent or super class will be Object class by default.
    5. If we are extending any class in child class then Object class will not be its parent class, but indirectly it will be
       it's super class
@@ -13,8 +13,8 @@ package OOPsConcepts;
    6. One child class can have only one parent class.
       ex:   class Child extends Parent {} -> correct
             class Child extends Parent1, Parent2 { // ❌ Not allowed in Java}
-   7.A single .java file can contain multiple classes, but only one public class, and the file name must match that public class.
-     If there’s no public class, the file name is flexible(ex: any_name.java).
+   7. A single .java file can contain multiple classes, but only one public class, and the file name must match that public class.
+      If there’s no public class, the file name is flexible(ex: any_name.java).
 
             
 	

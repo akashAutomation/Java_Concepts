@@ -9,7 +9,9 @@ public class PalindromeString {
 		 *  ex.-> MADAM etc.
 		 */
 		
-		String s = "MADAM";
+		String s = "A man, a plan, a canal, Panama";
+        s=s.toLowerCase();
+        s=s.replaceAll("[, ]", ""); //or s.replaceAll(" ", "").replaceAll(",","");
 		
 		
 	//1. using +(String concatenation) operator

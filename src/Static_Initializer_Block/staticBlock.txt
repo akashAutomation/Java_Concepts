@@ -1,0 +1,33 @@
+🔍 What is a Static Block?
+- A static block in Java is a block of code inside a class marked with the static keyword. It executes once when the
+  class is loaded into memory, before the main() method or any object creation. It’s mainly used for static
+  initialization (e.g., setting up static variables, loading configuration).
+
+- A static block (also called a static initializer block) is defined as:
+    static {
+        // code here
+    }
+- Execution timing: Runs automatically when the class is loaded by the JVM.
+- Frequency: Executes only once per class, regardless of how many objects are created.
+- Purpose: Initialize static variables, perform setup tasks, or run code that should execute before any object is created.
+
+⚡ Key Points
+- Runs before main(): If a class has both a static block and a main() method, the static block executes first.
+- No explicit call needed: You don’t invoke it; JVM triggers it automatically.
+- Multiple static blocks: Allowed, and they execute in the order they appear in the class.
+- You can initialize static variables inside a static block.
+    static int count;
+    static {
+        count = 10; // allowed
+    }
+- You can call static methods from a static block.
+
+
+Use cases:
+- Initializing static variables.
+- Loading configuration files.
+- Registering drivers (e.g., JDBC driver loading).
+- Performing one-time setup logic.
+
+
+

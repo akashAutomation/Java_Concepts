@@ -39,7 +39,7 @@ public class MethodOverriding {
 		 * 9. Parent class static method and child class non-static method --> not allowed
 		 *    Parent class non-static method and child class static method --> not allowed
 		 *    
-		 *    Parent class static method and child class static method     --> allowed --> it is not overriding concept, it is called method hiding.
+		 *    Parent class static method and child class static method --> allowed --> it is not overriding concept, it is called method hiding.
 		 *    
 		 * 10. In method overriding, method resolution done by JVM based on run time object.
 		 * 	   In method hiding, method resolution done by compiled based on reference type. that's why it is also called static polymorphism or early binding

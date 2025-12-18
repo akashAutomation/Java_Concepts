@@ -19,7 +19,7 @@ Introduction:
 
 Variables in interface:
 > variable's default nature - variables are by default public, static, final in nature.
-> Variable value will not be changed because it is final/constant in nature
+> Variable value will not be changed because it is final/constant in nature.
 > variables can not be private, default, protected in interfaces.
 
 Methods in interface:
@@ -54,7 +54,7 @@ interface InterfaceName
 	// public abstract methods
 }
 
-Use of Interfaces :-
+Uses of Interfaces :-
 1. Used to achieve 100% abstraction in Java.
 2. Used to define a common behaviour across unrelated classes.
 3. Used to achieve multiple inheritance in Java.

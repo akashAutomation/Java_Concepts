@@ -1,0 +1,28 @@
+- An Instance Initializer Block (IIB) is a block of code inside a class without any keyword (just {}).
+- It runs every time an object is created, right after the constructor call begins but before the constructor body executes.
+- Purpose: To initialize instance variables or run setup logic common to all constructors.
+
+⚡ Key Points
+- Runs every time you create an object.
+- Executes before the constructor body.
+- Useful when you want common initialization logic across multiple constructors.
+- You can have multiple IIBs in a class; they run in the order they appear.
+- Unlike static blocks, which run once when the class is loaded, IIBs run per object creation.
+- You can initialize instance variables inside a static block.
+    int count;
+
+        count = 10; // allowed
+    }
+- You can call instance methods from a instance block.
+
+ Comparison: Static Block vs Instance Initializer Block
+| Feature                  | Static Block                          | Instance Initializer Block            |
+|---------------------------|---------------------------------------|---------------------------------------|
+| **Keyword**              | `static {}`                           | `{}` (no keyword)                     |
+| **Execution**            | Runs once when class loads            | Runs every time an object is created  |
+| **Purpose**              | Initialize static members             | Initialize instance variables         |
+| **Order**                | Before `main()` or object creation    | Before constructor body               |
+
+
+
+

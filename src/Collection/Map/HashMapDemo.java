@@ -31,7 +31,7 @@ public class HashMapDemo {
 		capitalMap.put("Russia", "Moscow");
 		capitalMap.put("France", null);
 		
-		System.out.println(capitalMap);
+		System.out.println(capitalMap); //{null=LA, USA=Wahington DC, UK=London11, France=null, India=New Delhi, Russia=Moscow}
 		System.out.println(capitalMap.get("India")); //New Delhi
 		System.out.println(capitalMap.get("UK")); //London11
 		System.out.println(capitalMap.get(null)); //LA

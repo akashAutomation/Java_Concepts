@@ -1,6 +1,5 @@
 1. Map is not the child interface of Collection because a Map represents a fundamentally
- 	              different data structure: it stores key–value pairs, not just individual elements like
- 	              a Collection does.
+   different data structure: it stores key–value pairs, not just individual elements like a Collection does.
 2. If we want to represent a group of individual objects as key value pairs then we should go for Map interface.
    ex- RollNo.   Name
  		101       a

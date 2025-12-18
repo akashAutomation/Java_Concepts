@@ -6,7 +6,6 @@ More precisely, it means that a single method call can behave differently depend
 that it’s acting on — even if the reference type is the same.
 
 1. One name but multiple forms is called polymorphism.
-2. polymorphism only applies to instance methods(non-static methods), not static ones.
 
 two types
 	1. Static or compile time polymorphism or Early binding --> ex.- Overloading

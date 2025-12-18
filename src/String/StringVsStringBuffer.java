@@ -32,7 +32,7 @@ public class StringVsStringBuffer {
 		
 		System.out.println("sb1==sb2 --> "+(sb1==sb2)); // false because == operator return true only if both reference variable will point same object.
 		System.out.println("sb1.equals(sb2) = "+sb1.equals(sb2)); //false because there is no overridden equals method in string buffer class. It used Object class equals()
-		
+        System.out.println("sb1.toString().equals(sb2.toString())= "+sb1.toString().equals(sb2.toString())); // true
 	}
 	
 	public static void main(String[] args) {

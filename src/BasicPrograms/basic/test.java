@@ -1,52 +1,34 @@
 package BasicPrograms.basic;
 
+import java.util.*;
+
 public class test {
-	int power(int x, long y)
-    {
-        if( y == 0)
-            return 1;
-        if (y%2 == 0)
-            return power(x, y/2)*power(x, y/2);
-        return x*power(x, y/2)*power(x, y/2);
-    }
- 
-    /* Function to calculate order of the number */
-    int order(int x)
-    {
-        int n = 0;
-        while (x != 0)
-        {
-            n++;
-            x = x/10;
-        }
-        return n;
-    }
- 
-    // Function to check whether the given number is
-    // Armstrong number or not
-    boolean isArmstrong (int x)
-    {
-        // Calling order function
-        int n = order(x);
-        int temp=x, sum=0;
-        while (temp!=0)
-        {
-            int r = temp%10;
-            sum = sum + power(r,n);
-            temp = temp/10;
-        }
- 
-        // If satisfies Armstrong condition
-        return (sum == x);
-    }
- 
-    // Driver Program
+
     public static void main(String[] args)
     {
-        test ob = new test();
-        int x = 0;
-        System.out.println(ob.isArmstrong(x));
-        x = 2;
-        System.out.println(ob.isArmstrong(x));
+        //2,3,5,7
+
+        int arr[] = {5,2,10,7,9};
+        for(int i=0; i<arr.length-1; i++){
+            for(int j=0; j<arr.length-1; j++){
+                if(arr[j]>arr[j+1]){
+                    int temp = arr[j+1];
+                    arr[j+1]=arr[j];
+                    arr[j]=temp;
+                }
+
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+
+
+    }
+
+    public static int rec(int n){
+        int fact=1;
+        if(n>0){
+            fact=n*rec(n-1);
+        }
+    return fact;
     }
 }

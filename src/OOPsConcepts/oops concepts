@@ -1,0 +1,74 @@
+- OOPs stands for Object-Oriented Programming System. It is a way of structuring code so that objects represent entities,
+  and interactions between them solve problems.
+  It focuses on modeling real-world entities by combining data (attributes) and behavior (methods) into a single unit.
+
+fully oops languages: scala, ruby
+partial oops languages: java, javascript, python, c#, c++
+
+Why OOP Matters in Java:
+- Modularity: Breaks complex problems into smaller units.
+- Reusability: Inherited code reduces duplication.
+- Scalability: Easier to extend and maintain.
+- Security: Encapsulation protects sensitive data.
+
+1. Encapsulation
+- Bundling data (fields) and methods (functions) into a single unit (class).
+- Restricts direct access to data using access modifiers (private, public, protected).
+- Achieved through getters and setters.
+- Example:
+    class Student {
+        private String name;
+        public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
+    }
+
+2. Inheritance
+- Enables a class (child) to acquire properties and behaviors of another class (parent).
+- Promotes code reusability.
+- Uses the extends keyword.
+- Example:
+    class Animal {
+        void sound() { System.out.println("Animal makes sound"); }
+    }
+    class Dog extends Animal {
+        void sound() { System.out.println("Dog barks"); }
+    }
+
+3. Polymorphism
+- Means "many forms."
+- Allows methods to behave differently based on context.
+- Two types:
+- Compile-time (Method Overloading)
+- Runtime (Method Overriding)
+- Example:
+    class MathUtils {
+        int add(int a, int b) { return a + b; }
+        double add(double a, double b) { return a + b; } // overloading
+    }
+
+4. Abstraction
+- Hides implementation details and shows only essential features.
+- Achieved using abstract classes and interfaces.
+- Example:
+    abstract class Shape {
+        abstract void draw();
+    }
+    class Circle extends Shape {
+        void draw() { System.out.println("Drawing Circle"); }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

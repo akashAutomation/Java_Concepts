@@ -30,6 +30,9 @@ Abstract Methods :-
 4. Must be declared inside an abstract class or interface.
 5. Abstract methods must be overridden by subclasses, unless the subclass is also abstract.
 6. It cannot be private, static or final — because it must be overridden.
+7. main() can exist in abstract classes because they don’t require object instantiation.
+   The JVM doesn’t need to create an object of the abstract class; it just calls Test.main() directly.
+
 
 Syntax & Example :
 Syntax : abstract returnType methodName(parameters);
