@@ -1,22 +1,28 @@
 package BasicPrograms.basic;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DuplicateElementsInArray {
 
 	public static void main(String[] args) {
-		String a[]= {"ab", "ab", "abc", "abcd", "abc"};
-		
-		boolean b = false;
-		for(int i=0; i<a.length; i++) {
-			System.out.println("b = "+i+" "+b);
-			for(int j=i+1; j<a.length; j++) {
-				if(a[i].equals(a[j])) {
-					b = true;
-					System.out.println("duplicate "+a[i]);
-				}
+		String a[]= {"ab", "ab", "abc", "abcd", "abc", "ab"};
+
+		Map<String, Integer> map = new HashMap<>();
+		for(String s:a){
+			map.put(s, 0);
+		}
+
+		for(String s : a){
+			if(map.containsKey(s)){
+				map.put(s, map.get(s)+1);
 			}
 		}
-		if(b==false) {
-			System.out.println("duplicate not found");
+
+		for(Map.Entry<String, Integer> entry: map.entrySet()){
+			if(entry.getValue()>1){
+				System.out.println("key --> "+entry.getKey()+", value --> "+entry.getValue());
+			}
 		}
 
 	}

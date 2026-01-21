@@ -12,7 +12,7 @@ public class HashMapDemo {
 		/*
 		 * 1. no order - no indexing 
 		 * 2. store values --> <key, value> 
-		 * 3. key can not be duplicate, if there is duplicate key then it will give the latest value 
+		 * 3. key can not be duplicate, if there is duplicate key then it will store the latest value
 		 * 4. can store n number of null values but only one null key
 		 * 5. HashMap is not thread safe - unsynchronized
 		 * 6. Hash Code of null key is always zero. So null key, and it's value is always store in 0 index in map.
@@ -20,7 +20,7 @@ public class HashMapDemo {
 		 */		
 		
 		
-		HashMap<String, String> capitalMap = new HashMap<String, String>();
+		Map<String, String> capitalMap = new HashMap<String, String>();
 		capitalMap.put("India", "New Delhi");
 		capitalMap.put("USA", "Wahington DC");
 		capitalMap.put("UK", "London");

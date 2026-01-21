@@ -1,34 +1,44 @@
 package BasicPrograms.basic;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class test {
 
     public static void main(String[] args)
     {
-        //2,3,5,7
+        String a[]= {"ab", "ab", "abc", "abcd", "abc","ab"};
 
-        int arr[] = {5,2,10,7,9};
-        for(int i=0; i<arr.length-1; i++){
-            for(int j=0; j<arr.length-1; j++){
-                if(arr[j]>arr[j+1]){
-                    int temp = arr[j+1];
-                    arr[j+1]=arr[j];
-                    arr[j]=temp;
-                }
+//        for(int i=0; i<a.length; i++){
+//            for(int j=i; j<a.length; j++){
+//                if(a[i].equals(a[j])){
+//                    System.out.println(a[i]);
+//                }
+//            }
+//        }
+        Map<String, Integer> map = new HashMap<>();
+        for(String s:a){
+            map.put(s, 0);
+        }
 
+        for(String s : a){
+            if(map.containsKey(s)){
+                map.put(s, map.get(s)+1);
             }
         }
-        System.out.println(Arrays.toString(arr));
 
-
-    }
-
-    public static int rec(int n){
-        int fact=1;
-        if(n>0){
-            fact=n*rec(n-1);
+        for(Map.Entry<String, Integer> entry: map.entrySet()){
+            if(entry.getValue()>1){
+                System.out.println(entry.getKey());
+            }
         }
-    return fact;
     }
+
+    public static int rec(int num){
+        if(num>0){
+            return num*rec(num-1);
+        }
+        return 1;
+    }
+
 }
