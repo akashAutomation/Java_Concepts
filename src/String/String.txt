@@ -1,4 +1,4 @@
-String  -->
+👉 String:
 1. In Java, a String is an object that represents a sequence of characters and is used extensively for text manipulation.
 2. Strings are immutable, meaning their values cannot be changed once created.
 3. String objects are immutable means once we create string object then we can not perform any changes in that object.
@@ -6,6 +6,32 @@ String  -->
    This non-changeable behavior is called immutability.
 5. A String is an instance of the java.lang.String class.
 6. It stores a sequence of characters using UTF-16 encoding.
+7. Once a String object is created, its value cannot be changed. Because of this, multiple threads can safely share and
+   read the same String instance without synchronization.
+8. Whether the string comes from the string pool or is created with new, the immutability guarantee is the same
+
+👉 Difference Between String s = "ab"; and String a = new String("ab");
+1. String Literal ("ab"):
+   String s = "ab";
+    - Stored in the String Pool (a special memory area in the heap).
+    - If another variable is assigned "ab", it will point to the same pooled object.
+    - Example:
+        String s1 = "ab";
+        String s2 = "ab";
+        System.out.println(s1 == s2); // true (same reference from pool)
+        System.out.println(a1.equals(a2)); // true (same content)
+
+2. Explicit Object Creation (new String("ab"))
+   String a = new String("ab");
+    - Always creates a new object in the heap, even if "ab" already exists in the String Pool.
+    - The literal "ab" is still placed in the pool, but new String("ab") makes a separate copy.
+    - Example:
+        String a1 = new String("ab");
+        String a2 = new String("ab");
+        System.out.println(a1 == a2); // false (different objects)
+        System.out.println(a1.equals(a2)); // true (same content)
+
+👉 StringBuffer vs StringBuilder:
 
 StringBuffer --> StringBuffer is a mutable sequence of characters—unlike String, which is immutable. It’s part of java.lang
                  and is used when you need to modify strings frequently and safely in multi-threaded environments.
@@ -21,8 +47,8 @@ Feature	                String	                        StringBuffer	            
 4. Use Case	            Fixed text, constants	        Multi-threaded string edits	            Single-threaded string edits
 5. Memory Efficient	    ✅ Yes (interned)	            ❌ Less efficient                       ❌ Less efficient
 
-Thread-safe--> Thread-safe means that a piece of code or a class can be safely used by multiple threads at the same time without causing
-               data corruption or unexpected behavior.
+👉 Thread-safe--> Thread-safe means that a piece of code or a class can be safely used by multiple threads at the same time without causing
+                  data corruption or unexpected behavior.
 
 
 

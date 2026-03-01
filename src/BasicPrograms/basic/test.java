@@ -7,31 +7,45 @@ public class test {
 
     public static void main(String[] args)
     {
-        String a[]= {"ab", "ab", "abc", "abcd", "abc","ab"};
-
-//        for(int i=0; i<a.length; i++){
-//            for(int j=i; j<a.length; j++){
-//                if(a[i].equals(a[j])){
-//                    System.out.println(a[i]);
-//                }
-//            }
+//        String arr[]= {"a:80", "b:85", "c:90", "a:90", "c:85"};
+//        Map<String, List<Integer>> map = new HashMap<>();
+//
+//        for(int i=0; i<arr.length; i++){
+//            String[] a2 = arr[i].split(":");
+//            String key = a2[0];
+//            Integer value = Integer.parseInt(a2[1]);
+//            map.computeIfAbsent(key, k -> new ArrayList<>()).add(value);
+//
 //        }
-        Map<String, Integer> map = new HashMap<>();
-        for(String s:a){
-            map.put(s, 0);
+//        for(Map.Entry<String, List<Integer>> entry: map.entrySet()){
+//            List<Integer> li = entry.getValue();
+//            int sum=0;
+//            for(int v : li){
+//                sum = sum+v;
+//            }
+//            double avg = (double) sum/li.size();
+//            System.out.println(entry.getKey()+" -> "+avg);
+//        }
+        String s = "swiss"; //print 1st non repeatable char
+        Map<Character,Integer> map = new LinkedHashMap<>();
+        for(char c: s.toCharArray()){
+            map.put(c,0);
         }
 
-        for(String s : a){
-            if(map.containsKey(s)){
-                map.put(s, map.get(s)+1);
+        for(char c : s.toCharArray()){
+            if(map.containsKey(c)){
+                map.put(c, map.get(c)+1);
             }
         }
 
-        for(Map.Entry<String, Integer> entry: map.entrySet()){
-            if(entry.getValue()>1){
-                System.out.println(entry.getKey());
+        System.out.println(map);
+        for(Map.Entry<Character, Integer> entry: map.entrySet()){
+            if(entry.getValue()==1){
+                System.out.println(entry.getKey()+" -> "+entry.getValue());
+                return;
             }
         }
+
     }
 
     public static int rec(int num){

@@ -40,6 +40,31 @@ public class CountEachCharInString {
 			}
 
 			System.out.println(map);
+
+
+	//3. print 1st non-repeatable char, ex: in "swiss" -> w is the 1st non-repeatable char
+//		String s = "swiss";
+//		Map<Character,Integer> map = new LinkedHashMap<>();
+//		for(char c: s.toCharArray()){
+//			map.put(c,0);
+//		}
+//
+//		for(char c : s.toCharArray()){
+//			if(map.containsKey(c)){
+//				map.put(c, map.get(c)+1);
+//			}
+//		}
+//
+//		System.out.println(map);
+//		for(Map.Entry<Character, Integer> entry: map.entrySet()){
+//			if(entry.getValue()==1){
+//				System.out.println(entry.getKey()+" -> "+entry.getValue());
+//				return;
+//			}
+//		}
+
 	}
+
+
 
 }

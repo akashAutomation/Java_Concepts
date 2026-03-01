@@ -16,7 +16,7 @@ public class Constructor {
 	 *    
 	 * 7. If you don't want to use this keyword to initialize class variables then provide different name of local variable in constructor.
 	 *    ex-> name = n1 
-	 * 8. Constructor can not be static and final.
+	 * 8. Constructor can not be static and final. Since overriding doesn’t apply to constructors, marking them final has no meaning.
 	 * 9. It can be only default, public, protected & private.
 	 * 10. If you don't define any constructor in class, then there is always one hidden constructor of class that is called default constructor.
 	 */	

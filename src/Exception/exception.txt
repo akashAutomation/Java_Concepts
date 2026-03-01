@@ -40,11 +40,34 @@
 - throw → Used to explicitly throw an exception.
 - throws → Declares exceptions a method may throw.
 
+👉 Note --> 1. we can prevent finally block execution by using System.exit(0);
+            2. The JVM terminates immediately with exit code 0.
+            3. We can provide any int but use 0 for success, non-zero for errors as we can check the process exit status
+               (e.g., in a shell with echo $? on Linux/Mac), you’ll see 0.
+
+
 ⚖️ Why Exception Handling Matters
 - Prevents program crashes.
 - Provides meaningful error messages.
 - Ensures resources (files, DB connections) are safely closed.
 - Improves reliability and maintainability of applications.
+
+Notes:
+1. We can use multiple catch block with try block.
+2. when we use multiple catch blocks, the JVM checks them from top to bottom. That means the first block that matches
+   the thrown exception will run. Because of this, we always put more specific exceptions first and more general ones later.
+   For example, ArrayIndexOutOfBoundsException should come before Exception. If we reverse that order, the compiler will
+   throw an compilation error since the specific block would never be reached.
+   So the rule of thumb is: specific to general, top to bottom."
+
+try {
+    int[] arr = new int[5];
+    arr[10] = 50; // ArrayIndexOutOfBoundsException
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Array index issue: " + e.getMessage());
+} catch (Exception e) {
+    System.out.println("General exception: " + e.getMessage());
+}
 
 
 🧩 What is StackOverflowError?
